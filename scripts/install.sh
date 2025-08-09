@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-TORCH_VERSION="2.4.1"
-CUDA_VERSION="cu121"  # or cu124 if you want to match Docker exactly
-XFORMERS_VERSION="0.0.27.post2"  # Updated for torch 2.4.1 compatibility
+TORCH_VERSION="2.4.0"
+CUDA_VERSION="cu121"
+XFORMERS_VERSION="0.0.27.post2"
 
 echo "Deleting InstantID Serverless Worker"
 rm -rf /workspace/runpod-worker-instantid
