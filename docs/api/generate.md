@@ -3,7 +3,7 @@
 ```json
 {
   "input": {
-    "model": "wangqixun/YamerMIX_v8",
+    "model": "John6666/big-asp-v2-sdxl",
     "face_image": "base64 encoded image content",
     "pose_image": "base64 encoded image content",
     "prompt": "A man",

@@ -15,7 +15,7 @@ Zero-shot Identity-Preserving Generation in Seconds.
 
 | Model                                                       | 
 |-------------------------------------------------------------|
-| [YamerMIX_v8](https://huggingface.co/wangqixun/YamerMIX_v8) |
+| [YamerMIX_v8](https://huggingface.co/John6666/big-asp-v2-sdxl) |
 
 ## Testing
 

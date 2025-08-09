@@ -57,7 +57,7 @@ def get_instantid_pipeline():
         'torch_dtype': torch_dtype,
     }
 
-    pipeline = fetch_pretrained_model('wangqixun/YamerMIX_v8', **args)
+    pipeline = fetch_pretrained_model('John6666/big-asp-v2-sdxl', **args)
 
     return pipeline
 

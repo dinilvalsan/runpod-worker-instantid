@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from util import post_request, encode_image_to_base64
 
-MODEL_PATH = 'wangqixun/YamerMIX_v8'
+MODEL_PATH = 'John6666/big-asp-v2-sdxl'
 #MODEL_PATH = '/workspace/runpod-worker-instantid/src/models/dynavisionXLAllInOneStylized_releaseV0610Bakedvae.safetensors'
 IMAGE_PATH = '../data/mypic.jpg'
 PROMPT = 'a man'

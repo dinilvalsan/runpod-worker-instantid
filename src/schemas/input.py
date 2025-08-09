@@ -2,7 +2,7 @@ INPUT_SCHEMA = {
     'model': {
         'type': str,
         'required': False,
-        'default': 'wangqixun/YamerMIX_v8'
+        'default': 'John6666/big-asp-v2-sdxl'
     },
     'face_image': {
         'type': str,

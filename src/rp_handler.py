@@ -32,7 +32,7 @@ MAX_SEED = np.iinfo(np.int32).max
 device = get_torch_device()
 dtype = torch.float16 if str(device).__contains__('cuda') else torch.float32
 STYLE_NAMES = list(styles.keys())
-DEFAULT_MODEL = 'wangqixun/YamerMIX_v8'
+DEFAULT_MODEL = 'John6666/big-asp-v2-sdxl'
 DEFAULT_STYLE_NAME = 'Watercolor'
 
 # Load face encoder
@@ -92,7 +92,7 @@ def get_instantid_pipeline(pretrained_model_name_or_path):
             '.ckpt'
     ) or pretrained_model_name_or_path.endswith('.safetensors'):
         scheduler_kwargs = hf_hub_download(
-            repo_id='wangqixun/YamerMIX_v8',
+            repo_id='John6666/big-asp-v2-sdxl',
             subfolder='scheduler',
             filename='scheduler_config.json',
         )
