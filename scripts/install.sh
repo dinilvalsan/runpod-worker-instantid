@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-TORCH_VERSION="2.0.1"
+TORCH_VERSION="2.1.1"
 XFORMERS_VERSION="0.0.22"
 
 echo "Deleting InstantID Serverless Worker"
