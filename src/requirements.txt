@@ -1,13 +1,13 @@
 # Core libraries
 diffusers @ git+https://github.com/huggingface/diffusers
-transformers>=4.52.1
-accelerate==0.32.0
+transformers
+accelerate
 safetensors
 einops
 onnxruntime-gpu
 omegaconf
-peft==0.16.0
-huggingface-hub==0.24.7
+peft
+huggingface-hub
 opencv-python
-insightface==0.7.3
-pydantic==2.10.6
+insightface
+pydantic
