@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-TORCH_VERSION="2.1.1"
-XFORMERS_VERSION="0.0.22"
+TORCH_VERSION="2.4.1"
+CUDA_VERSION="cu121"  # or cu124 if you want to match Docker exactly
+XFORMERS_VERSION="0.0.27.post2"  # Updated for torch 2.4.1 compatibility
 
 echo "Deleting InstantID Serverless Worker"
 rm -rf /workspace/runpod-worker-instantid
@@ -27,8 +28,11 @@ cd /workspace/runpod-worker-instantid
 python3 -m venv /workspace/venv
 source /workspace/venv/bin/activate
 
-echo "Installing Torch"
-pip3 install --upgrade --no-cache-dir torch==${TORCH_VERSION} torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+echo "Upgrading pip"
+pip3 install --upgrade pip
+
+echo "Installing Torch with CUDA 12.1"
+pip3 install --upgrade --no-cache-dir torch==${TORCH_VERSION} torchvision torchaudio --index-url https://download.pytorch.org/whl/${CUDA_VERSION}
 
 echo "Installing xformers"
 pip3 install --no-cache-dir xformers==${XFORMERS_VERSION}
